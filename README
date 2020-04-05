@@ -1,28 +1,12 @@
-Version 1.0 6/30/2019.
+#Signpost
 
-This directory contains a skeleton for CS61B Project 0.
-
-Although some of what's in here might seem mysterious to you, try to
-understand what it's all for.  Don't be afraid to ask us about it.
-
-GENERAL NOTE:  EVERYTHING in these files is changeable as you see fit, unless
-   otherwise noted.  Your task is to conform to the spec, period.  While
-   we have suggested, with these files, certain points about the design, we
-   don't require any of it.
+You have a grid of squares; each square (except the last one) contains an arrow, and some squares also contain numbers. Your job is to connect the squares to form a continuous list of numbers starting at 1 and linked in the direction of the arrows – so the arrow inside the square with the number 1 will point to the square containing the number 2, which will point to the square containing the number 3, etc. Each square can be any distance away from the previous one, as long as it is somewhere in the direction of the arrow.
 
 CONTENTS:
 ---------
 
-README                 This file.  You need not turn this in.
-
-Makefile               For those of you using the standard Unix tool chain
-                       rather than Eclipse, this file provides for some
-                       simple compilation/testing control.  See the
-                       comments in it for the targets provided.  Those of
-                       you using Eclipse will need it on the instructional
-                       machines (the commands 'make' and 'make check' must
-                       work correctly on your submission, regardless of
-                       which editor or IDE you used).
+Makefile               This file provides for some
+                       simple compilation/testing control.
 
 signpost/
 
@@ -78,9 +62,8 @@ signpost/
 
 testing/                 Directory with integration test machinery.
 
-    tester.py          A Python 3 script for testing your program.  It makes
-                       use of the --testing option in your program to feed
-                       in known moves.
+    tester.py          A Python 3 script for testing of the program. 
+    
     testing.py         A module that supports testing in general.
     *.in               Test scripts accepted by the tester.
     *.out              The outputs (logged by BoardLogger) expected for each
